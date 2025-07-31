@@ -43,7 +43,7 @@ document.getElementById("zoneTableau").innerHTML = `Voici le tableau : ${myTable
 
 //Exercice - 2 - chat gpt
 
-let x = parseInt(prompt("combien de nombres veux-tu rentrer dans le tableau?"));
+/*let x = parseInt(prompt("combien de nombres veux-tu rentrer dans le tableau?"));
 let tab =[];
 let pairs =[];
 let impairs =[];
@@ -77,5 +77,5 @@ console.log("nombres impairs:", impairs);
 
 document.getElementById("zoneTableau").innerHTML = `voici le tableau complet: ${tab}`;
 document.getElementById("zonePair").innerHTML = `voici le tableau des pairs: ${pairs}`;
-document.getElementById("zoneImpair").innerHTML = `voici le tableau des impairs: ${impairs}`;
+document.getElementById("zoneImpair").innerHTML = `voici le tableau des impairs: ${impairs}`;*/
 

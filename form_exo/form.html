@@ -1,0 +1,66 @@
+   <!DOCTYPE html>
+   <html lang="en">
+   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulaires</title>
+   </head>
+   <body>
+    
+
+   
+   
+   <form id="form" action="http://bienvu.net/script.php" method="post" onsubmit="return checkForm(this);">
+        <fieldset>
+            <legend>Vos coordonnées</legend>
+    <p>*Ces zones sont obligatoires pour envoyer le formulaire.</p>
+            <label value="0" for="societe">Société: </label><input type="text" name="societe" id="societe" required minlength="1"><br>
+              <p id="erreur" style="color:red;"></p>
+
+            <label for="pac">Personne à contacter: </label><input type="pac" name="pac" id="pac" required minlength="1"><br>
+            <br> 
+
+            <label for="adresse_entrep">Adresse de l'entrerpise*: </label><textarea name="adresse_entrep" id="adresse_entrep"
+            ></textarea>
+            <br>
+            <label for="code_postal">Code Postal*: </label><input type="text" name="code_postal" id="code_postal"
+                required minlength="5"><br>
+
+            <label for="ville">Ville: </label><input type="text" name="ville" id="ville" required minlength="1"><br>
+            <label for="email">Email*: </label><input type="email" name="email" id="email"
+                placeholder="dave.loper@afpa.fr" required><br>
+             <label for="telephone">Télephone : </label><input type="telephone" name="telephone" id="telephone"><br>
+
+
+            <label for="sujet">Sélectionnez l'environnement technique du projet : </label>
+            <select id="sujet" size="1" length ="5">
+                <option default selected value="">choisissez</option>
+                <option value="access">Access</option>
+                <option value="java">Java</option>
+                <option value="Delphi">Delphi</option>
+                <option value="Windev">Windev</option>
+                <option value="visualBasic">Visual Basic</option>
+                <option value="powerBuilder">Power Builder</option>
+                <option value="internet">Internet</option>
+                <option value="intranet">Intranet</option>
+                <option value="windowsNt">Windows NT</option>
+                <option value="unix">Unix</option>
+                <option value="sqlServer">SQL Server</option>
+                <option value="oracle">Oracle</option>
+                <option value="autres">Autres...</option>
+            </select>
+            <label for="zoneTexte"></label>
+            <textarea id="zoneTexte" rows="4" cols="50" readonly></textarea>
+            <br>
+
+        </fieldset>
+        <button type="submit">Envoyer</button><button type="reset">Annuler</button>
+
+
+
+
+    </form>
+
+        <script src="form.js"></script>
+       </body>
+   </html>
